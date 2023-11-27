@@ -21,10 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Rising stuff.
+$(call inherit-product, vendor/rising/config/rising.mk)
 
-PRODUCT_NAME := lineage_enchilada
+RISING_MAINTAINER := Ꮛnѵoყ-Z
+RISING_CHIPSET := Snapdragon845
+WITH_GMS := false
+
+# Enable kernel inline building
+INLINE_KERNEL_BUILDING := true
+
+PRODUCT_NAME := rising_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
