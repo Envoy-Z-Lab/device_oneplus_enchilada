@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_enchilada.mk
+    $(LOCAL_DIR)/rising_enchilada.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_enchilada-user \
-    lineage_enchilada-userdebug \
-    lineage_enchilada-eng
+    rising_enchilada-user \
+    rising_enchilada-userdebug \
+    rising_enchilada-eng
